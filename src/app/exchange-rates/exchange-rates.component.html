@@ -1,0 +1,9 @@
+
+<div style="padding: 50px;">
+    <h1> $ Exchange Rate</h1>
+    <div *ngIf="loading"> Loading... </div>
+    <div *ngIf="error"> Error :( </div>
+    <p *ngFor="let rate of rates">
+        {{ rate.currency }} | {{ rate.rate}}
+    </p>
+</div>
